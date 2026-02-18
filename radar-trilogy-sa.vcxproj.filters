@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\render">
+      <UniqueIdentifier>{A3F27964-7B9B-4F4A-9B2E-3C9E8F2A1B4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\render\camera">
+      <UniqueIdentifier>{17A121F7-308C-9D0E-4F6A-7B8C9D0E1F2A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\render\draw">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\mapmanager">
+      <UniqueIdentifier>{C2F676A2-8B3D-4E5F-9A1B-2C3D4E5F6A7B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\mapmanager\gangzones">
+      <UniqueIdentifier>{D3A787B3-9C4E-5F6A-0B2C-3D4E5F6A7B8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\mapmanager\legends">
+      <UniqueIdentifier>{F5A909D5-1E6A-7B8C-2D4E-5F6A7B8C9D0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\mapmanager\airstrips">
+      <UniqueIdentifier>{06A010E6-2F7B-8C9D-3E5F-6A7B8C9D0E1F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\shaders">
+      <UniqueIdentifier>{28A232A8-419D-0E1F-5A7B-8C9D0E1F2A3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\game">
+      <UniqueIdentifier>{B5B49B86-9DBD-6B6C-1E4G-5E1G0B4C3D6E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\utils">
+      <UniqueIdentifier>{39A343A9-520E-1F2A-6B8C-9D0E1F2A3B4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{4A6A6174-6146-696C-6573-202020202020}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\game\TestSpawner.cpp">
+      <Filter>Source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="source\game\Config.cpp">
+      <Filter>Source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="source\render\RadarRenderer.cpp">
+      <Filter>Source\render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\render\RadarGeometry.cpp">
+      <Filter>Source\render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\render\RadarViewContext.cpp">
+      <Filter>Source\render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\render\camera\CameraController.cpp">
+      <Filter>Source\render\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="source\render\draw\DxDrawPrimitives.cpp">
+      <Filter>Source\render\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="source\render\RenderTarget.cpp">
+      <Filter>Source\render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\render\GpsRender.cpp">
+      <Filter>Source\render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\render\RenderRadio.cpp">
+      <Filter>Source\render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mapmanager\BlipManager.cpp">
+      <Filter>Source\mapmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mapmanager\MoreIconsManager.cpp">
+      <Filter>Source\mapmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mapmanager\BlipRenderer.cpp">
+      <Filter>Source\mapmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mapmanager\gangzones\GangZoneRenderer.cpp">
+      <Filter>Source\mapmanager\gangzones</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mapmanager\MapChunkManager.cpp">
+      <Filter>Source\mapmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mapmanager\legends\LegendRenderer.cpp">
+      <Filter>Source\mapmanager\legends</Filter>
+    </ClCompile>
+    <ClCompile Include="source\mapmanager\airstrips\AirstripRenderer.cpp">
+      <Filter>Source\mapmanager\airstrips</Filter>
+    </ClCompile>
+    <ClCompile Include="source\shaders\ShaderCode.cpp">
+      <Filter>Source\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\shaders\ShaderManager.cpp">
+      <Filter>Source\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="source\game\GameState.cpp">
+      <Filter>Source\game</Filter>
+    </ClCompile>
+    <ClCompile Include="source\utils\MathUtils.cpp">
+      <Filter>Source\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="source\utils\Base64Image.cpp">
+      <Filter>Source\utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\game\Config.h">
+      <Filter>Source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\TestSpawner.h">
+      <Filter>Source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\RadarRenderer.h">
+      <Filter>Source\render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\RadarGeometry.h">
+      <Filter>Source\render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\RadarTypes.h">
+      <Filter>Source\render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\RadarViewContext.h">
+      <Filter>Source\render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\camera\CameraController.h">
+      <Filter>Source\render\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\draw\DxDrawPrimitives.h">
+      <Filter>Source\render\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\draw\DrawResources.h">
+      <Filter>Source\render\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\RenderTarget.h">
+      <Filter>Source\render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\GpsRender.h">
+      <Filter>Source\render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\render\RenderRadio.h">
+      <Filter>Source\render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\BlipManager.h">
+      <Filter>Source\mapmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\MoreIconsManager.h">
+      <Filter>Source\mapmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\BlipRenderer.h">
+      <Filter>Source\mapmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\BlipTypes.h">
+      <Filter>Source\mapmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\gangzones\GangZoneRenderer.h">
+      <Filter>Source\mapmanager\gangzones</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\gangzones\GangZoneTypes.h">
+      <Filter>Source\mapmanager\gangzones</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\MapChunkManager.h">
+      <Filter>Source\mapmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\legends\LegendRenderer.h">
+      <Filter>Source\mapmanager\legends</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\airstrips\AirstripRenderer.h">
+      <Filter>Source\mapmanager\airstrips</Filter>
+    </ClInclude>
+    <ClInclude Include="source\mapmanager\airstrips\AirstripData.h">
+      <Filter>Source\mapmanager\airstrips</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shaders\ShaderCode.h">
+      <Filter>Source\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shaders\ShaderManager.h">
+      <Filter>Source\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="source\game\GameState.h">
+      <Filter>Source\game</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\MathUtils.h">
+      <Filter>Source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\Base64Image.h">
+      <Filter>Source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="source\utils\ColorUtils.h">
+      <Filter>Source\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\radar-trilogy-sa.rc">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release GTA-SA|Win32">
+      <Configuration>Release GTA-SA</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug GTA-SA|Win32">
+      <Configuration>Debug GTA-SA</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7F3E8A2B-9C1D-4E5F-A6B7-8C9D0E1F2A3B}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>radar-trilogy-sa</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release GTA-SA|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTA-SA|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release GTA-SA|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug GTA-SA|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release GTA-SA|Win32'">
+    <LocalDebuggerCommand>$(GTA_SA_DIR)\gta_sa.exe</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(GTA_SA_DIR)</LocalDebuggerWorkingDirectory>
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>$(ProjectDir)bin\GTA-SA\Release\</OutDir>
+    <IntDir>$(ProjectDir)obj\GTA-SA\Release\</IntDir>
+    <TargetName>radar-trilogy-sa</TargetName>
+    <TargetExt>.asi</TargetExt>
+    <ExternalIncludePath>$(IncludePath);$(PLUGIN_SDK_DIR)\shared\dxsdk;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(LibraryPath);$(PLUGIN_SDK_DIR)\shared\dxsdk;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTA-SA|Win32'">
+    <LocalDebuggerCommand>$(GTA_SA_DIR)\gta_sa.exe</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory>$(GTA_SA_DIR)</LocalDebuggerWorkingDirectory>
+    <LinkIncremental>true</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>$(ProjectDir)bin\GTA-SA\Debug\</OutDir>
+    <IntDir>$(ProjectDir)obj\GTA-SA\Debug\</IntDir>
+    <TargetName>radar-trilogy-sa</TargetName>
+    <TargetExt>.asi</TargetExt>
+    <ExternalIncludePath>$(IncludePath);$(PLUGIN_SDK_DIR)\shared\dxsdk;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>$(LibraryPath);$(PLUGIN_SDK_DIR)\shared\dxsdk;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release GTA-SA|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_NON_CONFORMING_SWPRINTFS;TARGET_NAME=R"($(TargetName))";GTASA;GTAGAME_NAME="San Andreas";GTAGAME_ABBR="SA";GTAGAME_ABBRLOW="sa";GTAGAME_PROTAGONISTNAME="CJ";GTAGAME_CITYNAME="San Andreas";_DX9_SDK_INSTALLED;PLUGIN_SGV_10US;RW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)source;$(ProjectDir)source\render;$(ProjectDir)source\render\draw;$(ProjectDir)source\render\camera;$(ProjectDir)source\mapmanager;$(ProjectDir)source\mapmanager\gangzones;$(ProjectDir)source\mapmanager\legends;$(ProjectDir)source\mapmanager\airstrips;$(ProjectDir)source\shaders;$(ProjectDir)source\game;$(ProjectDir)source\utils;$(PLUGIN_SDK_DIR)\Plugin_SA;$(PLUGIN_SDK_DIR)\Plugin_SA\game_sa;$(PLUGIN_SDK_DIR)\Plugin_SA\game_sa\rw;$(PLUGIN_SDK_DIR)\shared;$(PLUGIN_SDK_DIR)\shared\game;$(PLUGIN_SDK_DIR)\stb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/sdl- /std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalDependencies>$(IntDir)radar-trilogy-sa.res;plugin.lib;d3d9.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(PLUGIN_SDK_DIR)\output\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>bin\GTA-SA\Release\radar-trilogy-sa.SA.lib</ImportLibrary>
+    </Link>
+    <PreBuildEvent>
+      <Command>rc /nologo /fo "$(IntDir)radar-trilogy-sa.res" "$(ProjectDir)source\radar-trilogy-sa.rc"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if defined GTA_SA_DIR ( xcopy /Y "$(TargetPath)" "$(GTA_SA_DIR)\scripts" )</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug GTA-SA|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_NON_CONFORMING_SWPRINTFS;TARGET_NAME=R"($(TargetName))";GTASA;GTAGAME_NAME="San Andreas";GTAGAME_ABBR="SA";GTAGAME_ABBRLOW="sa";GTAGAME_PROTAGONISTNAME="CJ";GTAGAME_CITYNAME="San Andreas";_DX9_SDK_INSTALLED;PLUGIN_SGV_10US;RW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)source;$(ProjectDir)source\render;$(ProjectDir)source\render\draw;$(ProjectDir)source\render\camera;$(ProjectDir)source\mapmanager;$(ProjectDir)source\mapmanager\gangzones;$(ProjectDir)source\mapmanager\legends;$(ProjectDir)source\mapmanager\airstrips;$(ProjectDir)source\shaders;$(ProjectDir)source\game;$(ProjectDir)source\utils;$(PLUGIN_SDK_DIR)\Plugin_SA;$(PLUGIN_SDK_DIR)\Plugin_SA\game_sa;$(PLUGIN_SDK_DIR)\Plugin_SA\game_sa\rw;$(PLUGIN_SDK_DIR)\shared;$(PLUGIN_SDK_DIR)\shared\game;$(PLUGIN_SDK_DIR)\stb;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/sdl- /std:c++latest %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(IntDir)radar-trilogy-sa.res;plugin_d.lib;d3d9.lib;d3dx9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(PLUGIN_SDK_DIR)\output\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>bin\GTA-SA\Debug\radar-trilogy-sa.SA.lib</ImportLibrary>
+    </Link>
+    <PreBuildEvent>
+      <Command>rc /nologo /fo "$(IntDir)radar-trilogy-sa.res" "$(ProjectDir)source\radar-trilogy-sa.rc"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>if defined GTA_SA_DIR ( xcopy /Y "$(TargetPath)" "$(GTA_SA_DIR)\scripts" )</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\game\TestSpawner.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)'=='Release GTA-SA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="source\game\Config.cpp" />
+    <ClCompile Include="source\render\RadarRenderer.cpp" />
+    <ClCompile Include="source\render\RadarGeometry.cpp" />
+    <ClCompile Include="source\render\RadarViewContext.cpp" />
+    <ClCompile Include="source\render\camera\CameraController.cpp" />
+    <ClCompile Include="source\render\draw\DxDrawPrimitives.cpp" />
+    <ClCompile Include="source\render\RenderTarget.cpp" />
+    <ClCompile Include="source\render\GpsRender.cpp" />
+    <ClCompile Include="source\render\RenderRadio.cpp" />
+    <ClCompile Include="source\mapmanager\BlipManager.cpp" />
+    <ClCompile Include="source\mapmanager\MoreIconsManager.cpp" />
+    <ClCompile Include="source\mapmanager\BlipRenderer.cpp" />
+    <ClCompile Include="source\mapmanager\gangzones\GangZoneRenderer.cpp" />
+    <ClCompile Include="source\mapmanager\MapChunkManager.cpp" />
+    <ClCompile Include="source\mapmanager\legends\LegendRenderer.cpp" />
+    <ClCompile Include="source\mapmanager\airstrips\AirstripRenderer.cpp" />
+    <ClCompile Include="source\shaders\ShaderCode.cpp" />
+    <ClCompile Include="source\shaders\ShaderManager.cpp" />
+    <ClCompile Include="source\game\GameState.cpp" />
+    <ClCompile Include="source\utils\MathUtils.cpp" />
+    <ClCompile Include="source\utils\Base64Image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\radar-trilogy-sa.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\game\Config.h" />
+    <ClInclude Include="source\game\TestSpawner.h" />
+    <ClInclude Include="source\render\RadarRenderer.h" />
+    <ClInclude Include="source\render\RadarGeometry.h" />
+    <ClInclude Include="source\render\RadarTypes.h" />
+    <ClInclude Include="source\render\RadarViewContext.h" />
+    <ClInclude Include="source\render\camera\CameraController.h" />
+    <ClInclude Include="source\render\draw\DxDrawPrimitives.h" />
+    <ClInclude Include="source\render\draw\DrawResources.h" />
+    <ClInclude Include="source\render\RenderTarget.h" />
+    <ClInclude Include="source\render\GpsRender.h" />
+    <ClInclude Include="source\render\RenderRadio.h" />
+    <ClInclude Include="source\mapmanager\BlipManager.h" />
+    <ClInclude Include="source\mapmanager\MoreIconsManager.h" />
+    <ClInclude Include="source\mapmanager\BlipRenderer.h" />
+    <ClInclude Include="source\mapmanager\BlipTypes.h" />
+    <ClInclude Include="source\mapmanager\gangzones\GangZoneRenderer.h" />
+    <ClInclude Include="source\mapmanager\gangzones\GangZoneTypes.h" />
+    <ClInclude Include="source\mapmanager\MapChunkManager.h" />
+    <ClInclude Include="source\mapmanager\legends\LegendRenderer.h" />
+    <ClInclude Include="source\mapmanager\airstrips\AirstripRenderer.h" />
+    <ClInclude Include="source\mapmanager\airstrips\AirstripData.h" />
+    <ClInclude Include="source\shaders\ShaderCode.h" />
+    <ClInclude Include="source\shaders\ShaderManager.h" />
+    <ClInclude Include="source\game\GameState.h" />
+    <ClInclude Include="source\utils\MathUtils.h" />
+    <ClInclude Include="source\utils\Base64Image.h" />
+    <ClInclude Include="source\utils\ColorUtils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

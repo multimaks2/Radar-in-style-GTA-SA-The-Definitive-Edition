@@ -6,8 +6,8 @@
 
 - Полная замена стандартного радара
 - Отображение названия радиостанции
-- Поддержка ганг-зон
-- Расширенные маркеры и точки интереса
+- Поддержка зон-банд
+- Расширенные маркеры - по примеру из кода More
 - Гибкая настройка через конфигурационный файл
 
 ## Установка
@@ -20,13 +20,13 @@
 
 - GTA San Andreas (версия 1.0 US)
 - [Plugin SDK](https://github.com/DK22Pac/plugin-sdk) (для сборки)
-- Visual Studio 2022 (для сборки)
+- Visual Studio 2022/2026 
 
 ## Сборка
 
-1. Клонируйте репозиторий
+1. Клонируйте репозиторий в папку `plugin-sdk\tools\myplugin-gen\generated\`
 2. Установите переменную окружения `PLUGIN_SDK_DIR` с путём к Plugin SDK
-3. Откройте `radar-trilogy-sa.sln` в Visual Studio 2022
+3. Откройте `radar-trilogy-sa.sln` в Visual Studio 2026 Insider
 4. Соберите проект в режиме Release
 
 ## Конфигурация
@@ -48,4 +48,9 @@ MIT. См. файл [LICENSE](LICENSE).
 
 - [DK22Pac](https://github.com/DK22Pac) за Plugin SDK
 - Сообществу GTA modding за документацию
+- [JuniorDjjr](https://gist.github.com/JuniorDjjr) за пример More Icon
+
+## Источники
+
+- More Icon воссоздан на основе примера: https://gist.github.com/JuniorDjjr/38ba16704a2de63fd7ea31711d6e9e0f
 
