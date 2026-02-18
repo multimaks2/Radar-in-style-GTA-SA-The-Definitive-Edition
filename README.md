@@ -50,7 +50,3 @@ MIT. См. файл [LICENSE](LICENSE).
 - Сообществу GTA modding за документацию
 - [JuniorDjjr](https://gist.github.com/JuniorDjjr) за пример More Icon
 
-## Источники
-
-- More Icon воссоздан на основе примера: https://gist.github.com/JuniorDjjr/38ba16704a2de63fd7ea31711d6e9e0f
-
