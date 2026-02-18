@@ -2,6 +2,9 @@
 
 Кастомный радар для GTA San Andreas с расширенными возможностями.
 
+<img width="2560" height="1440" alt="Снимок экрана (250)" src="https://github.com/user-attachments/assets/7093eae1-857e-4ed0-a5d2-26e8416d7a5e" />
+
+
 ## Особенности
 
 - Полная замена стандартного радара
