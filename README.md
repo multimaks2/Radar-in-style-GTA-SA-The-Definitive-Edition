@@ -23,13 +23,13 @@
 
 - GTA San Andreas (версия 1.0 US)
 - [Plugin SDK](https://github.com/DK22Pac/plugin-sdk) (для сборки)
-- Visual Studio 2022/2026 
+- Visual Studio 2026 
 
 ## Сборка
 
 1. Клонируйте репозиторий в папку `plugin-sdk\tools\myplugin-gen\generated\`
 2. Установите переменную окружения `PLUGIN_SDK_DIR` с путём к Plugin SDK
-3. Откройте `radar-trilogy-sa.sln` в Visual Studio 2026 Insider
+3. Откройте `radar-trilogy-sa.sln` в Visual Studio 2026 
 4. Соберите проект в режиме Release
 
 ## Конфигурация
