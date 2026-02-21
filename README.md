@@ -1,55 +1,53 @@
 # Radar Trilogy SA
 
-Кастомный радар для GTA San Andreas с расширенными возможностями.
+Custom radar for GTA San Andreas with extended features.
 
-<img width="2560" height="1440" alt="Снимок экрана (250)" src="https://github.com/user-attachments/assets/7093eae1-857e-4ed0-a5d2-26e8416d7a5e" />
+<img width="2560" height="1440" alt="Screenshot (250)" src="https://github.com/user-attachments/assets/7093eae1-857e-4ed0-a5d2-26e8416d7a5e" />
 
+## Features
 
-## Особенности
+- Full replacement of the standard radar
+- Display of radio station name
+- Gang zone support
+- Extended markers — based on the [More Icon](https://gist.github.com/JuniorDjjr/38ba16704a2de63fd7ea31711d6e9e0f) code example
+- Flexible configuration via a config file
 
-- Полная замена стандартного радара
-- Отображение названия радиостанции
-- Поддержка зон-банд
-- Расширенные маркеры - по примеру из кода [More Icon](https://gist.github.com/JuniorDjjr/38ba16704a2de63fd7ea31711d6e9e0f)
-- Гибкая настройка через конфигурационный файл
+## Installation
 
-## Установка
+1. Copy `radar-trilogy-sa.asi` to your GTA SA `scripts` folder
+2. Make sure [ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) is installed
+3. Launch the game
 
-1. Скопируйте `radar-trilogy-sa.asi` в папку `scripts` вашей GTA SA
-2. Убедитесь, что установлен [ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader)
-3. Запустите игру
+## Requirements
 
-## Требования
-
-- GTA San Andreas (версия 1.0 US)
-- [Plugin SDK](https://github.com/DK22Pac/plugin-sdk) (для сборки)
+- GTA San Andreas (version 1.0 US)
+- [Plugin SDK](https://github.com/DK22Pac/plugin-sdk) (for building)
 - Visual Studio 2026 
 
-## Сборка
+## Building
 
-1. Клонируйте репозиторий в папку `plugin-sdk\tools\myplugin-gen\generated\`
-2. Установите переменную окружения `PLUGIN_SDK_DIR` с путём к Plugin SDK
-3. Откройте `radar-trilogy-sa.sln` в Visual Studio 2026 
-4. Соберите проект в режиме Release
+1. Clone the repository into `plugin-sdk\tools\myplugin-gen\generated\`
+2. Set the environment variable `PLUGIN_SDK_DIR` to your Plugin SDK path
+3. Open `radar-trilogy-sa.sln` in Visual Studio 2026
+4. Build the project in Release mode
 
-## Конфигурация
+## Configuration
 
-Файл конфигурации: `radar-trilogy-sa.ini` (создаётся автоматически)
+Config file: `radar-trilogy-sa.ini` (created automatically)
 
-### Параметры
+### Options
 
-- `Shape` — форма радара (0 = квадрат, 1 = круг)
-- `ShowGangZones` — отображение ганг-зон (0 = выкл, 1 = вкл)
-- `ModeMoreIcon` — режим иконок
-- `CircleSize` — размер радара
+- `Shape` — radar shape (0 = square, 1 = circle)
+- `ShowGangZones` — show gang zones (0 = off, 1 = on)
+- `ModeMoreIcon` — icon mode
+- `CircleSize` — radar size
 
-## Лицензия
+## License
 
-MIT. См. файл [LICENSE](LICENSE).
+MIT. See the [LICENSE](LICENSE) file.
 
-## Благодарности
+## Acknowledgements
 
-- [DK22Pac](https://github.com/DK22Pac) за Plugin SDK
-- Сообществу GTA modding за документацию
-- [JuniorDjjr](https://gist.github.com/JuniorDjjr) за пример More Icon
-
+- [DK22Pac](https://github.com/DK22Pac) for Plugin SDK
+- GTA modding community for documentation
+- [JuniorDjjr](https://gist.github.com/JuniorDjjr) for the More Icon example
